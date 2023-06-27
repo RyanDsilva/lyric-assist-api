@@ -1,0 +1,17 @@
+{
+  "name": "@library/graph-helper",
+  "version": "1.0.0",
+  "description": "Graph Helper Library",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "start": "node dist/index.js"
+  },
+  "author": "Ryan Dsilva <contact@ryandsilva.dev>",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/gateway": "^2.4.7",
+    "@apollo/server": "^4.7.1",
+    "@apollo/subgraph": "^2.4.7"
+  }
+}

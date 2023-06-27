@@ -1,0 +1,38 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {
+        "incremental": true,
+        "moduleResolution": "node",
+        "target": "ES2022",
+        "module": "CommonJS",
+        "types": [
+            "node",
+            "jest"
+        ],
+        "lib": [
+            "ES2020"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "@library/graph-helper": [
+                "libraries/graph-helper/src"
+            ],
+            "@library/database": [
+                "libraries/database/src"
+            ],
+            "@library/models": [
+                "libraries/models/src"
+            ]
+        },
+        "allowJs": true,
+        "checkJs": false,
+        "declaration": true,
+        "composite": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
+    }
+}

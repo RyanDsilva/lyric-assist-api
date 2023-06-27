@@ -1,0 +1,13 @@
+{
+  "name": "graph-gateway",
+  "version": "1.0.0",
+  "description": "Gateway Service",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "start": "node dist/index.js"
+  },
+  "author": "Ryan Dsilva <contact@ryandsilva.dev>",
+  "license": "ISC",
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+federation_version: =2.3.2
+subgraphs:
+  users-subgraph:
+    routing_url: http://users-subgraph:3000/graphql
+    schema:
+      file: ./services/users-subgraph/schema.graphql
+  songs-subgraph:
+    routing_url: http://songs-subgraph:3000/graphql
+    schema:
+      file: ./services/songs-subgraph/schema.graphql

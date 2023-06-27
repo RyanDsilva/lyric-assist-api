@@ -1,0 +1,31 @@
+extend schema
+  @link(
+    url: "https://specs.apollo.dev/federation/v2.3"
+    import: ["@key", "@shareable", "@inaccessible"]
+  )
+
+type Query {
+  """
+  Returns the current authenticated user
+  """
+  me: User!
+}
+
+type User @key(fields: "id") {
+  """
+  Unique ID
+  """
+  id: ID!
+  """
+  User's email, used for login and communications
+  """
+  email: String!
+  """
+  Hashed password
+  """
+  password: String! @inaccessible
+  """
+  User's name
+  """
+  name: String!
+}

@@ -1,0 +1,23 @@
+{
+    "files": [],
+    "references": [
+        {
+            "path": "./services/graph-gateway"
+        },
+        {
+            "path": "./services/users-subgraph"
+        },
+        {
+            "path": "./services/songs-subgraph"
+        },
+        {
+            "path": "./libraries/graph-helper"
+        },
+        {
+            "path": "./libraries/database"
+        },
+        {
+            "path": "./libraries/models"
+        }
+    ]
+}

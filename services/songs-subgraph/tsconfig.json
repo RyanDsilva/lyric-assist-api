@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests"
+  ],
+  "references": [
+    {
+      "path": "../../libraries/graph-helper"
+    },
+    {
+      "path": "../../libraries/database"
+    },
+    {
+      "path": "../../libraries/models"
+    }
+
+  ]
+}
